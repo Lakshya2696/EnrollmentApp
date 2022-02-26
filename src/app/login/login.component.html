@@ -1,0 +1,16 @@
+ <div class="login">
+    <h3>Login page</h3>
+<form #myForm="ngForm" (ngSubmit)="onLoginSubmit(myForm.value)">
+    <p>
+        <input type="text"  
+            [ngModel]="login.name" name= "name" placeholder= "Name" required>
+    </p>
+    <p>
+        <input type="password"  
+            [ngModel]="login.password" name= "password" placeholder= "Password" required>
+    </p>
+    <p>
+        <button type="submit" [disabled]="!myForm.valid">Submit</button>
+    </p>
+</form>
+</div>

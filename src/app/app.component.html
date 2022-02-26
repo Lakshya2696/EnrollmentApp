@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" class="header">
+  <mat-toolbar-row>
+    <h1>Enrollment App</h1>
+    <span class="menu-spacer"></span>
+    <div *ngIf="!isLogin">
+      <a mat-button [routerLink]="'/login'"> Login </a>
+      <a mat-button [routerLink]="'/register'"> Register </a>
+
+    </div>
+    <div *ngIf="isLogin">
+      <a (click)="logout()" mat-button >Logout</a>
+
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

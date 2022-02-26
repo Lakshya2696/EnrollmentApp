@@ -1,0 +1,28 @@
+
+  <h3 class="text-center">User List page</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>City</th>
+      <th>Action</th>
+    </tr>
+   
+  </thead>
+ <tbody>
+   <tr *ngFor="let user of userList">
+    <td>{{ user.name }}</td>
+    <td>{{ user.email }}</td>
+    <td>{{ user.phoneNumber }}</td>
+    <td>{{ user.city }}</td>
+    <td>
+      <button [routerLink]="['/dashboard/enrollment-form',user.email]"><mat-icon>edit</mat-icon></button>
+      <button (click)="onDelete(user.email)"><mat-icon>delete</mat-icon></button>
+     </td>
+   </tr>
+ </tbody>
+</table>
+
+

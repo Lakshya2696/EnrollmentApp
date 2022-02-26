@@ -1,0 +1,17 @@
+.enroll-container{
+    height: 100%;
+    background: #fff;
+    color :#000;
+    .mat-sidenav{
+        background-color: #fefefe;
+        margin-top: 18px;
+        border-right: 1px solid #eee;
+        .enroll-section{
+            margin-bottom: 16px;
+            padding: 8px;
+        }
+    }
+    .mat-sidenav-content{
+        width: 100%;
+    }
+}

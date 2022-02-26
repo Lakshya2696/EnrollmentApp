@@ -1,0 +1,20 @@
+<div class="enrollment-form">
+    <h3>Enrollment page</h3>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <p>
+        <input id="name" type="text" formControlName="name" placeholder="Name">
+    </p>
+    <p>
+        <input id="email" type="text" formControlName="email" placeholder="Email">
+    </p>
+   <p>
+    <input id="phone" type="text" formControlName="phoneNumber" placeholder="Phone number">
+   </p>
+    <p>
+        <input id="city" type="text" formControlName="city" placeholder="City">
+    </p>
+    
+    <button type="submit" ><span *ngIf="id">Update</span> <span *ngIf="!id">Submit</span></button>
+  
+  </form>
+</div>

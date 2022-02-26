@@ -1,0 +1,13 @@
+<mat-sidenav-container class = "enroll-container">
+  <mat-sidenav mode = "side" opened>
+     <section class = "enroll-section">
+        <a [routerLink]="['enrollment-form']">Register</a>
+     </section>
+     <section class = "enroll-section">
+        <a [routerLink]="['user-list']">List</a>
+     </section>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
